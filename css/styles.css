@@ -23,7 +23,7 @@ li {
   grid-auto-flow: dense;
 }
 
-@media (max-width: 459px) {
+@media (max-width: 650px) {
   .nav__list {
     display: flex;
     flex-direction: column;
