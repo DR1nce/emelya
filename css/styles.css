@@ -17,10 +17,18 @@ li {
 }
 
 .nav__list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-gap: 32px;
+  grid-auto-flow: dense;
 }
 
+@media (max-width: 459px) {
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .nav__list-button {
   border-radius: 15px;
   width: 270px;
