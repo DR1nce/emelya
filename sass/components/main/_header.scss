@@ -1,42 +1,53 @@
-body{
-    background-color: #FFF7E3;
-  }
-  a{
-    text-decoration: none;
-  }
-  li {
-    list-style: none;
-  }
-  .container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
-  .nav__list {
+
+body {
+  background-color: #FFF7E3;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav {
+  &__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    grid-gap: 32px;
-  grid-auto-flow: dense;
-  }
-  @media (max-width: 650px) {
-    .nav__list {
-      display: flex;
-      flex-direction: column;
+    grid-template-columns: repeat(3, 270px);
+    justify-content: center;
+    grid-gap: 170px;
+    padding-right: 40px;
+
+    @media (max-width: 650px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
     }
   }
-  .nav__list-button {
+
+  &__list-form,
+  &__list-item {
+    width: 270px;
+  }
+
+  &__list-button {
     border-radius: 15px;
     width: 270px;
     height: 50px;
-    border: #FFF7E3;
+    border: 1px solid #FFF7E3;
     background-color: #cc9e78;
     cursor: pointer;
-    .nav__list-text{
-        font-family: "Gluten", cursive;
-        font-weight: bold;
-        font-size: 20px;
-        color: #fef6e3;
-      }
-  }
 
-  
+    .nav__list-text {
+      font-family: "Gluten", cursive;
+      font-weight: bold;
+      font-size: 20px;
+      color: #fef6e3;
+    }
+  }
+}
