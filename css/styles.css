@@ -89,19 +89,9 @@ li {
   height: auto;
   margin: 10px;
 }
-@media (max-width: 1200px) {
-  .header__content img {
-    width: 40%;
-  }
-}
-@media (max-width: 768px) {
-  .header__content img {
-    width: 70%;
-  }
-}
 
 .backg {
-  background-image: url(/images/wave1.svg);
+  background-image: url("/images/wave1.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 340px;
@@ -109,10 +99,9 @@ li {
 }
 
 .backg2 {
-  background-image: url(/images/wave2.svg);
+  background-image: url("/images/wave2.svg");
   background-repeat: no-repeat;
-  margin-top: -5px;
-  height: 600px;
+  height: 212px;
   width: 100%;
 }
 
@@ -121,6 +110,7 @@ li {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
+  gap: 100px;
 }
 
 .first {
@@ -128,39 +118,46 @@ li {
   background-color: #f1ccaf;
 }
 
-.roadmap {
-  width: 43rem;
+.roadmap-d {
+  width: 33rem;
 }
 
 .swave {
   background-color: #e6bfa0;
 }
 
-.description {
-  font-family: "Gluten", cursive;
-  font-weight: bold;
-  font-size: 25px;
-  color: #fef6e3;
-  position: relative;
-}
-
 @media screen and (max-width: 992px) {
+  .first {
+    height: 700px;
+  }
   .container.road {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
   }
   .road {
     display: flex;
     flex-direction: column;
   }
+  .roadmap-d,
   .roadmap {
-    max-width: 20rem;
+    max-width: 19rem;
+    max-height: 40rem;
   }
-  .backg2 {
-    width: 24.8rem;
+  .container.desc {
+    flex-direction: column;
   }
-  .description {
-    text-wrap: wrap;
-    font-size: calc(24px + 1.6129032258vw);
+  .container.desc .desc1 {
+    width: 20rem;
   }
+  .container.desc .desc2 {
+    width: 20rem;
+  }
+}
+.container.desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
