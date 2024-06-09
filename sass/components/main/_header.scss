@@ -85,14 +85,14 @@ li {
     border-radius: 15px;
     width: 100%; /* changed from 25% to 100% */
     height: 50px; /* reverted to the original fixed height */
-    border: 4px solid #431303;
+    border: 3px solid #6e4231;
     background-color: #cc9e78;
     cursor: pointer;
 
     .nav__list-text {
       font-family: "Gluten", cursive;
       font-weight: bold;
-      font-size: 20px; /* reverted to the original fixed font size */
+      font-size: 24px; /* reverted to the original fixed font size */
       color: #fef6e3;
       
     }
