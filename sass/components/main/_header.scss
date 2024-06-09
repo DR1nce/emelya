@@ -85,7 +85,7 @@ li {
     border-radius: 15px;
     width: 100%; /* changed from 25% to 100% */
     height: 50px; /* reverted to the original fixed height */
-    border: 1px solid #FFF7E3;
+    border: 4px solid #431303;
     background-color: #cc9e78;
     cursor: pointer;
 
@@ -94,6 +94,7 @@ li {
       font-weight: bold;
       font-size: 20px; /* reverted to the original fixed font size */
       color: #fef6e3;
+      
     }
   }
 }

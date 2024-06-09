@@ -31,7 +31,7 @@ li {
   border-radius: 15px;
   width: 100%; /* changed from 25% to 100% */
   height: 50px; /* reverted to the original fixed height */
-  border: 1px solid #FFF7E3;
+  border: 4px solid #431303;
   background-color: #cc9e78;
   cursor: pointer;
 }
@@ -91,7 +91,7 @@ li {
 }
 
 .backg {
-  background-image: url("../images/wave1.svg");
+  background-image: url("/images/wave1.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 340px;
@@ -99,7 +99,7 @@ li {
 }
 
 .backg2 {
-  background-image: url("../images/wave2.svg");
+  background-image: url("/images/wave2.svg");
   background-repeat: no-repeat;
   height: 212px;
   width: 100%;
@@ -127,6 +127,15 @@ li {
 }
 
 @media screen and (max-width: 992px) {
+  .header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__content img {
+    width: 20rem;
+  }
   .first {
     height: 700px;
   }

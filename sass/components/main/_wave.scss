@@ -36,6 +36,15 @@
   }
   
   @media screen and (max-width: 992px) {
+    .header__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 20rem;
+        }
+    }
     .first {
       height: 700px;
     }
